@@ -2,9 +2,9 @@
 title: "Python for Bioinformatics"
 author: Graeme Fox & Matthew R. Gemmell
 date: "`r format(Sys.time(), '%B, %Y')`"
-favicon: figures/NEOF_favicon.png
-description: NEOF book for the Python for Bioinformatics workshop
-cover-image: "figures/NEOF.png"
+favicon: figures/CGR_favicon.png
+description: CGR book for the Python for Bioinformatics workshop
+cover-image: "figures/CGR_large.png"
 ---
 
 ```{r cite-packages, include = FALSE}
@@ -27,7 +27,7 @@ knitr::opts_chunk$set(class.source="Rchunk")
 ```
 
 <center>
-![](figures/NEOF_rounded_corners.png){width=300px}
+![](figures/CGR_large.png){width=400px}
 </center>
 
 # (PART\*) Intro {-}

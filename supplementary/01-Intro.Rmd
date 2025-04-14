@@ -2,13 +2,13 @@
 title: "Python for Bioinformatics - Supplementary Materials"
 author: Graeme Fox & Matthew R. Gemmell
 date: "`r format(Sys.time(), '%B, %Y')`"
-favicon: images/NEOF_favicon.png
-description: NEOF book for the Python for Bioinformatics workshop - Supplementary materials
-cover-image: "images/NEOF.png"
+favicon: figures/CGR_favicon.png
+description: CGR book for the Python for Bioinformatics workshop - Supplementary materials
+cover-image: "figures/CGR_large.png"
 ---
 
 <center>
-![](figures/NEOF_rounded_corners.png){width=300px}
+![](figures/CGR_large.png){width=400px}
 </center>
 
 # Introduction
@@ -21,7 +21,7 @@ cover-image: "images/NEOF.png"
 knitr::opts_chunk$set(class.source="Rchunk") 
 ```
 
-<center>![](images/python_supplement.png){height="200px"}</center>
+<center>![](figures/python_supplement.png){height="200px"}</center>
 
 <br><br> These supplementary materials are focused on working with other types of data and generating plots with Python. We will work with comma delimited data tables and create a bar chart and scatter plot.
 

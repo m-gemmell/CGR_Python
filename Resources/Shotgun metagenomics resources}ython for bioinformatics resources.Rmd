@@ -1,0 +1,80 @@
+--- 
+title: "Python for bioinformatics resources"
+author: "Graeme Fox & Matthew R. Gemmell"
+date: "`r format(Sys.time(), '%B, %Y')`"
+favicon: figures/CGR_favicon.png
+description: CGR book for the Python for bioinformatics workshop resources
+cover-image: "figures/CGR_large.png"
+---
+
+<center>
+![](figures/CGR_large.png){width=400px}
+</center>
+
+# Videos, slides, & files
+
+```{r, fig.align = 'center',out.width= '20%', echo=FALSE }
+knitr::include_graphics(path = "figures/python.png", auto_pdf = TRUE)
+``` 
+
+## Intro & Foundations
+
+<div class="container">
+<iframe src="https://www.youtube.com/embed/YthRD3MQ3a4" 
+frameborder="0" allowfullscreen class="video"></iframe>
+</div>
+
+[__Slides__](https://docs.google.com/presentation/d/1eMUhI8UB0ht9j3kgNK-do10LkWc97dF-K10TWAKdmwY/edit?usp=sharing)
+
+## Programmatic coding
+
+<div class="container">
+<iframe src="https://www.youtube.com/embed/INf4F9t-Hpo" 
+frameborder="0" allowfullscreen class="video"></iframe>
+</div>
+
+[__Slides__](https://docs.google.com/presentation/d/17UTWzIQt59XmlY_loHbuLWWECE0ln_IuOkbJq4Jfapw/edit?usp=drive_link)
+
+## Practical python
+
+<div class="container">
+<iframe src="https://www.youtube.com/embed/4kf9cEM-snw" 
+frameborder="0" allowfullscreen class="video"></iframe>
+</div>
+
+[__Slides__](https://docs.google.com/presentation/d/1sj7-ilJExmI9MEDGZIaEQ3jnDsOpKPVsECszhO8Q9Mg/edit?usp=drive_link)
+
+## Exercises
+
+<div class="container">
+<iframe src="https://www.youtube.com/embed/3tpJkavGCvI" 
+frameborder="0" allowfullscreen class="video"></iframe>
+</div>
+
+[__Slides__](https://docs.google.com/presentation/d/1_271r0edGkpTUmKZUCMdIZ2UT1uyzHEVM9ZBh8Fn1uU/edit?usp=drive_link)
+
+## Workshop files
+
+The below compressed directory is provided so you may attempt the workshop materials on a computer/cluster available to you.
+
+Note:
+
+- The file locations will not match
+
+[__Download files__](https://neof-workshops.github.io/Python_m4zqwb/resources/Files/Python_course_data.zip)
+
+## Bookdown html
+
+Links to the online versions of the Bookdowns.
+
+- [__Course__](https://neof-workshops.github.io/CGR_Python_8773cf/Course/)
+- [__Supplemental__](https://neof-workshops.github.io/CGR_Python_8773cf/Supplemental/)
+
+## Jupyter notebooks
+
+Pre-made Jupyter notebooks containing the course code with annotations.
+
+[__Download zipped directory__](https://neof-workshops.github.io/Python_m4zqwb/resources/Files/Python_course_data_with_jupyter_notebooks.zip)
+
+<!--chapter:end:01-Python_for_bioinformatics.Rmd-->
+

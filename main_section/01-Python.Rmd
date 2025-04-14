@@ -1,0 +1,110 @@
+---
+title: "Python for Bioinformatics"
+author: Graeme Fox & Matthew R. Gemmell
+date: "`r format(Sys.time(), '%B, %Y')`"
+favicon: figures/NEOF_favicon.png
+description: NEOF book for the Python for Bioinformatics workshop
+cover-image: "figures/NEOF.png"
+---
+
+```{r cite-packages, include = FALSE}
+# automatically create a bib database for R packages
+# add any packages you want to cite here
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'webexercises'
+), 'packages.bib')
+#Below code block sets style to be used in python code blocks
+#This is to give it a border so each cell is more obvious
+#https://bookdown.org/yihui/rmarkdown-cookbook/chunk-styling.html
+```
+
+```{r, echo=FALSE}
+#Change colour, border, and text of code chunks
+#Check style.css for .Rchunk
+#https://stackoverflow.com/questions/65627531/change-r-chunk-background-color-in-bookdown-gitbook
+#https://bookdown.org/yihui/rmarkdown-cookbook/chunk-styling.html
+knitr::opts_chunk$set(class.source="Rchunk") 
+```
+
+<center>
+![](figures/NEOF_rounded_corners.png){width=300px}
+</center>
+
+# (PART\*) Intro {-}
+
+# Introduction
+
+<center>
+![](figures/python.png){width=300px}
+</center>
+
+Python is one of the most popular programming languages for bioinformatics and data analysis in general. It is a very flexible language with countless applications in the manipulation and processing of data files. This course is aimed at Python beginners and will give you transferable skills to manipulate your own data. The course will also provide you experience in Python modules tailored specifically for bioinformatics and genomics analyses.
+
+Sessions will start with a brief presentation followed by self-paced computer practicals guided by this online interactive book. This book will contain theory, practice code, and exercises. Multiple choice questions will help reinforce what you have learnt throughout the book.
+
+At the end of the course learners will be able to:
+
+- Create, edit, run, and save python scripts with Jupyter-notebook.
+- Understand and use fundamental python concepts including operators, annotations, variables, and variable classes.
+- Utilise a variety of python functions and methods.
+- Store and manipulate data within lists, sets, and dictionaries.
+- Produce If and else statements to print out different results based on logical conditions (True or False).
+- Carry out the same task on multiple items with loops.
+- Read in and write out fastq files with the biopython library.
+- Filter sequences from fastq data.
+- Use logical operators to test multiple conditions at once.
+
+There are [supplementary materials](https://neof-workshops.github.io/Python_m4zqwb/Supplemental/) including the use of the Pandas library for table based data and Matplotlib for plot production. These can be run through after the course by the learner.
+
+## Table of contents {-}
+
+```{r, echo=FALSE, align="centre"}
+#Create 2 coilumn dataframe
+column_1 <- c(
+ '[Course Introduction](#intro)', 
+ '[![](figures/python.png){height="150"}](#intro)',
+ '[Jupyer-notebook](#jupyter)',
+ '[![](figures/jupyter_logo.png){style="height:150px; border-radius:15px; background:white"}](#jupyter)',
+ '[Python Fundamentals](#python_fundamentals)',
+ '[![](figures/python_fundamentals.png){height="150"}](#python_fundamentals)',
+ '[Data Structures](#data_structures)',
+ '[![](figures/python_data_structure.png){height="150"}](#data_structures)',
+ '[Conditions (if and else statements)](#python_conditions)',
+ '[![](figures/python_condition.png){height="150"}](#python_conditions)',
+ '[Working with DNA Sequence Data](#reading_seq_data)',
+ '[![](figures/biopython_logo.png){style="height:150px; border-radius:15px; background:white"}](#reading_seq_data)',
+ '[Reading and Writing Files](#reading_writing)',
+ '[![](figures/contract.png){height="150"}](#reading_writing)',
+  '[Final exercises](#fundrecapexercise)',
+ '[![](figures/exercise_2.png){height="150"}](#fundrecapexercise)'
+)
+column_2 <- c(
+  '[Working in the VNC](#cluster)',
+ '[![](figures/cluster.png){height="150"}](#cluster)',
+ '[Scripting in Python](#scripting)',
+ '[![](figures/scripting_icon.png){height="150"}](#scripting)',
+ '[Functions and methods](#functions_methods)',
+ '[![](figures/function.png){height="150"}](#functions_methods)',
+ '[Fundamental exercise](#fundamental_exercise)',
+ '[![](figures/Mimas tiliae.png){height="150"}](#fundamental_exercise)',
+ '[Loops](#loops)',
+ '[![](figures/loopdeloo.png){height="150"}](#loops)',
+ '[Manipulating Sequence Data](#modify_dna_data)',
+ '[![](figures/modify_dna.png){height="150"}](#modify_dna_data)',
+ '[Logical operators](#logical_operators)',
+ '[![](figures/logic.png){height="150"}](#logical_operators)',
+   '[Appendix](#further_resources)',
+ '[![](figures/further_resources.png){height="150"}](#further_resources)'
+)
+table_df <- data.frame(column_1, column_2)
+#Kable and kableextra libraries
+library(knitr)
+library(kableExtra)
+#Create table
+#ALign both column in centre (align = "cc")
+table_df %>%
+  kbl(align= "cc", col.names = NULL) %>%
+  kable_styling(position = "center")
+```
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.

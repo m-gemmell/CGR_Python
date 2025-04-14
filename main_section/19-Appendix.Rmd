@@ -1,0 +1,129 @@
+# (APPENDIX) Appendix {.unnumbered}
+
+# Further resources {#further_resources}
+<center>
+![](figures/further_resources.png){style="width:200px"}
+</center>
+
+-   [A Byte of Python](https://python.swaroopch.com/)
+-   [The Hitchhiker's Guide to Python!](https://docs.python-guide.org/)
+-   [Python documentation](https://docs.python.org/3/)
+-   [Biopython](https://biopython.org/): Set of tools for biological computation written in python.
+    -   [Biopython tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
+    -   [SeqIO website](https://biopython.org/wiki/SeqIO): Interface for input and output of sequence files in python.
+
+# Mamba installs
+
+<center>
+![](figures/mamba_logo.png){style="width:200px; border-radius:5px"}
+</center>
+
+## Mamba installation and environment {#mamba_install}
+
+Mamba is a reimplementation of conda. It is a great tool for installing bioinformatic packages including R packages.
+
+Mamba github: <https://github.com/mamba-org/mamba>
+
+The best way to use Mamba is to install Miniforge. It has both Conda and Mamba commands.
+
+Miniforge installation: <https://github.com/conda-forge/miniforge>
+
+Mamba guide: <https://mamba.readthedocs.io/en/latest/user_guide/mamba.html>
+
+To create the mamba environment `python` run the below commands in your bash. You will need to have installed `mamba` first.
+
+```{bash, eval=FALSE}
+#Python
+mamba create -n python
+mamba activate python
+mamba install -c anaconda jupyter
+mamba install -c conda-forge biopython
+mamba install -c anaconda pandas
+mamba install -c conda-forge matplotlib
+```
+
+# Cheatsheet {#cheatsheet}
+
+## Operators
+
+### Arithmetic operators
+
+-   **`+`** (addition)
+-   **`-`** (subtraction)
+-   **`*`** (multiplication)
+-   **`/`** (division)
+-   **`**`** (power/exponent)
+-   **`//`** (Floor division)
+-   **`%`** (modulo operator. Find the remainder after dividing 2 numbers)
+
+### Comparison operators
+
+-   **`==`**: Equals logical operator.
+-   **`!=`**: Does not equal logical operator.
+-   **`<`**: Less than logical operator.
+-   **`<=`**: Less than or equal to logical operator.
+-   **`>`**: Greater than logical operator.
+-   **`>=`**: Greater than or equal to logical operator.
+
+### Logical operators
+
+-   **`and`** logical operator.
+    -   If both comparisons are `True` return `True`.
+    -   If either or both comparisons are `False` return `False`.
+-   **`or`** logical operator.
+    -   If either or both comparisons are `True` return `True`.
+    -   If both comparisons are `False` return `False`.
+
+## Functions
+
+-   **`print()`**: Print specified text.
+-   **`type()`**: Check **class/type** of a **variable**.
+-   **`str()`** : Transform **variable** to string **class**.
+-   **`int()`** : Transform **variable** to integer **class**.
+-   **`float()`** : Transform **variable** to float **class**.
+-   **`len()`**: Calculate number of characters in a string **variable**.
+-   **`set()`**: Transform a **list** to a **set**.
+-   **`reversed()`**: Reverse a **string**.
+-   **`open()`**: Open a file for reading (`r`), writing (`w`), or appending (`a`).
+
+### Biopython functions
+
+For a full list of `Bio.SeqIO` methods please see the [wiki](https://biopython.org/wiki/SeqIO)
+
+-   **`SeqIO.parse()`**: Takes a filename and format name to return a `SeqRecord` **list**.
+    -   e.g. `fastq_list = SeqIO.parse("example_input.fastq", "fastq")`
+-   **`SeqIO.write()`**: Writes a `SeqRecord` list as a file with a specified format.
+    -   e.g. `seqIO.write(fastq_list, "example_output.fastq", "fastq")`
+
+## Methods
+
+### String methods
+
+-   **`.upper()`**: Convert string to upper case.
+-   **`.lower()`**: Convert string to lower case.
+-   **`.count()`**: Count number of specified string pattern in **string variable** or .
+-   **`.split()`**: Split string by specified delimiter.
+-   **`.startswith()`**: Check if a string starts with a particular sub-string. Returns `True` or `False`.
+-   **`.strip()`**: Remove leading or trailing white spaces.
+
+### List methods
+
+-   **`.append()`**: Append a value to the end of a **list**.
+
+### Set methods
+
+-   **`.add()`**: Add a value to a **set**.
+
+### File methods
+
+-   **`.write()`**: **Write** data to a file **opened** for **writing**.
+-   **`.readline()`**: Extract the first line from a file **opened** for **reading**.
+
+### Biopython methods
+
+-   **`.translate()`**: Translate a DNA sequence record element to a protein sequence.
+
+## Statements
+
+-   **`for <loop_variable> in <variable>:`** : Loop through each **value** in a **variable**.
+-   **`with <data> as <variable_name>:`** : Start a data stream.

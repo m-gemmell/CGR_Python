@@ -1,6 +1,6 @@
 ---
 title: "Python for Bioinformatics"
-author: Graeme Fox & Matthew R. Gemmell
+author: Matthew R. Gemmell & Graeme Fox
 date: "`r format(Sys.time(), '%B, %Y')`"
 favicon: figures/CGR_favicon.png
 description: CGR book for the Python for Bioinformatics workshop
